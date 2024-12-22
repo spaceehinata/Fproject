@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;     
+}
+body{
+    color: #fff;
+    background-color: #05121B;
+}
+/* Header */
+.header {
+    position: relative;
+    width: 100%; /* ფიქსირებული სიგანე 1440px */
+    height: 120px; /* სიმაღლე */
+    display: flex;
+    justify-content: space-between; /* სივრცე ელემენტებს შორის */
+    align-items: center; /* ვერტიკალური ცენტრირება */
+    gap: 0px; /* არანაირი შუალედი */
+    opacity: 1; /* გამჭვირვალე მდგომარეობის ჩართვა */
+    font-size: 16px; /* ტექსტის ზომა */
+    font-weight: 400; /* ტექსტის სისქე */
+    line-height: 21.82px; /* ხაზებს შორის სიმაღლე */
+    color: #05121B; /* ტექსტის ფერი */
+    background-color: #fff;
+    text-underline-position: from-font; /* ხაზის პოზიცია ფონტის მიხედვით */
+    text-decoration-skip-ink: none; /* ხაზის გადაფარვა არ მოხდება */
+}
+/* Logo */
+.logo {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 25px;
+    left: 72px;
+    opacity: 1;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MENU */
+.nav-container {
+    position: absolute;
+    width: 998px; /* ფიქსირებული სიგანე */
+    height: 22px;
+    top: 49px;
+    left: 214px;
+    display: flex; /* გვერდიგვერდ ელემენტების განლაგება */
+    list-style: none; /* წერტილების მოხსნა */
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    opacity: 1;
+    justify-content: space-between; /* დაშორება რომ იყოს კარგად*/
+}
+
+/* წითლად რო იყოს Home */
+.nav-container a.active {
+    color: red; /* აქტიური ლინკის ფერი */
+}
+
+/* ნავიგაციის ლინკები */
+.nav-container a {
+    text-decoration: none;
+    color: black; 
+    font-size: 14px;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* ტრანზიცია ფერის შეცვლისთვის */
+}
+
+/* მაუსის მიტანისას რო შეიცვალოს Hover-ის დროს */
+.nav-container a:hover {
+    color: red;
+}
+
+/*Mode*/
+.mode {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    top: 48px;
+    left: 1310px;
+    right: 80px;
+    /* opacity: 1; */
+}
+
+.mode img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.hero{
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.nunito {
+    /* margin-top: 220px; */
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 100px;
+
+}
+.text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
